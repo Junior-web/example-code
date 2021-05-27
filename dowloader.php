@@ -66,7 +66,7 @@
 
 			foreach($files as $file) {
 				preg_match('/(\.[a-z0-9]*)/m', $file, $format);
-				copy($this->dir.$file, $this->new_dir.DIRECTORY_SEPARATOR.$this->GetNameAudio($file)['name'].$format[0]);
+				copy($this->dir.$file, $this->new_dir.DIRECTORY_SEPARATOR.$this->getNameAudio($file)['name'].$format[0]);
 			}
 
 			if(isset($_POST['path_pdf']) && $_POST['path_pdf'] != '') {
