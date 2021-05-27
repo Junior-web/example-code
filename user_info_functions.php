@@ -1,3 +1,4 @@
+<?php
 function getCourseID(array $options)
 {
   return select_from_bd(['course_id'], 'lessons', $options)->fetch_array(MYSQLI_ASSOC)["course_id"];
